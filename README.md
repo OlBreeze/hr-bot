@@ -1,4 +1,4 @@
-# HR Job Search Bot - Automated Job Application Assistant (11-11-2025)
+# 💼 HR Job Search Bot - Automated Job Application Assistant (11-11-2025)
 
 Developed an intelligent job search automation platform that aggregates vacancies from multiple APIs, filters relevant opportunities, and generates personalized cover letters using AI. The system streamlines the entire job application workflow from discovery to submission.
 
