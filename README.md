@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# HR Job Search Bot - Automated Job Application Assistant (11-11-2025)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Developed an intelligent job search automation platform that aggregates vacancies from multiple APIs, filters relevant opportunities, and generates personalized cover letters using AI. The system streamlines the entire job application workflow from discovery to submission.
 
-## Available Scripts
+```
+🔍 Multi-source job aggregation (Remotive, Jooble, with extensible API support)
+🤖 AI-powered cover letter generation using LLM (OpenRouter/Claude)
+📊 Smart vacancy management with view tracking and selection system
+💾 Persistent storage for resumes, applications, and generated letters
+🎯 Intelligent filtering and relevance-based sorting
+📑 Pagination and batch processing for high-volume job searches
+🔄 Real-time API status monitoring and fallback handling
+✅ Full-cycle job application workflow (Search → Review → Select → Apply)
+📤 Export/Import functionality for data portability
+🎨 Modern responsive UI with real-time vacancy updates
+```
 
-In the project directory, you can run:
+**Tech Stack:**
+- **Frontend:** React, Lucide Icons, TailwindCSS
+- **APIs:** Remotive API, Jooble API, OpenRouter/Anthropic Claude API
+- **Storage:** Browser Storage API with localStorage fallback
+- **Architecture:** Modular service-based design (JobScraperService, StorageService)
 
-### `npm start`
+**Key Features:**
+- Aggregates 20-50+ job listings per search from multiple platforms
+- Deduplicates and ranks vacancies by relevance score
+- Generates unique, context-aware cover letters for each position
+- Tracks application status (new/viewed/selected)
+- Stores complete application history with full-text search capability
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://github.com/OlBreeze/hr-bot
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Capabilities:**
+- ### search parameters:
 
-### `npm test`
+![](https://github.com/user-attachments/assets/a647c505-d4da-4152-92d7-8f4c54d67f51)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ### Resume to generate a relevant cover letter with OpenRouter:
 
-### `npm run build`
+![](https://github.com/user-attachments/assets/8d6b6b15-5621-497f-8db2-3b2a3021796e)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ### found vacancies with pagination:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![](https://github.com/user-attachments/assets/25a7b2a5-759e-44a7-a650-fa17b85b579c)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ### selected vacancies:
 
-### `npm run eject`
+![](https://github.com/user-attachments/assets/185b3878-ee54-4b5a-baa9-81ad06896cff)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- ### generated letter for selected vacancies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![](https://github.com/user-attachments/assets/5af33ace-c001-4b46-b091-24cd9a82a271)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```python
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+---
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
